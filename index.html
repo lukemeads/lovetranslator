@@ -57,8 +57,14 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-    <script type="text/javascript"> 
-        $("#fakeloader").fakeLoader(); 
+    <script>
+        $(document).ready(function(){
+            $("#fakeLoader").fakeLoader({
+                timeToHide:1200,
+                bgColor:"lightblue",
+                spinner:"spinner1"
+            });
+        });
     </script>
 
 </body>
