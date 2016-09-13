@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Love Translator</title>
+</head>
+
+<body>
+
+    <div id="fakeLoader"></div>
+
+    <div class="col-md-offset-4">
+
+        <img class="logo" src="images/logo.png" alt="Logo">
+        <div class="form-group">
+            <form>
+                <input class="form-control" id="txtMessage" type="text" placeholder="Insert text to be analysed">
+                <br>
+                <button class="btn btn-primary" type="button" id="sendBtn" data-toggle="tooltip" title="Start analysis!">Send</button>
+            </form>
+        </div>
+        <br>
+        <h2 id="page-text"></h2>
+
+        <!-- Invisible progress bars (precoloured) -->
+        <div class="progress">
+            <div id="prog-bar-success" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100">
+            </div>
+        </div>
+
+        <div class="progress">
+            <div id="prog-bar-warning" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                aria-valuemax="100">
+            </div>
+        </div>
+
+        <div class="progress">
+            <div id="prog-bar-danger" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/basic.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>
