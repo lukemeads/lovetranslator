@@ -4,11 +4,14 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
     <title>Love Translator</title>
 </head>
 
 <body>
+
+    <div id="fakeLoader"></div>
 
     <div class="col-md-offset-4">
 
@@ -47,11 +50,15 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
     <script src="js/basic.js"></script>
     <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
+    </script>
+    <script type="text/javascript"> 
+        $("#fakeloader").fakeLoader(); 
     </script>
 
 </body>
