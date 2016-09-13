@@ -2,8 +2,6 @@ var sendBtn = $("#sendBtn");
 var pagetext = $("#page-text")[0];
 var textBox = $("#txtMessage")[0];
 
-alertt("hi");
-
 sendBtn.on("click", function () {
   swal({
     title: "Analyzing",
