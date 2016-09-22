@@ -2,17 +2,14 @@ body {
     background-color: lightblue;
 }
 
-.logo {
-    width: 465px;
-    height: 192px;
-}
-
 .form-control {
-    width: 400px; 
-    height: 200px;
+    height: 100px;
 }
 
 div.progress {
-    width: 450px;
     display: none;
+}
+
+.container {
+    width: 30%;
 }
