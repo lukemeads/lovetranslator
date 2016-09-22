@@ -14,46 +14,41 @@
 
     <div id="fakeLoader"></div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
+    <div class="container" id="page-container">
 
-                <img class="img-responsive" src="images/logo.png" alt="Logo">
-                <p>Does someone <b><i>love</i></b> you based on a message they've sent you? <br>Paste the message below and
-                    find out.</p>
+        <img class="img-responsive" src="images/logo.png" alt="Logo">
+        <p>Does someone <b><i>love</i></b> you based on a message they've sent you? <br>Paste the message below and find out.</p>
 
-                <form>
-                    <div class="form-group">
-                        <input class="form-control" id="txtMessage" type="text" placeholder="Insert text to be analysed">
-                        <br>
-                        <button class="btn btn-primary" type="button" id="sendBtn" data-toggle="tooltip" title="Start analysis!">Send</button>
-                    </div>
-                </form>
+        <form>
+            <div class="form-group">
+                <input class="form-control" id="txtMessage" type="text" placeholder="Insert text to be analysed">
                 <br>
-                <h2 id="page-text"></h2>
+                <button class="btn btn-primary" type="button" id="sendBtn" data-toggle="tooltip" title="Start analysis!">Send</button>
+            </div>
+        </form>
+        <br>
+        <h2 id="page-text"></h2>
 
-                <!-- Invisible progress bars (precoloured) -->
-                <div class="progress">
-                    <div id="prog-bar-success" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                        aria-valuemax="100">
-                    </div>
-                </div>
-
-                <div class="progress">
-                    <div id="prog-bar-warning" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100">
-                    </div>
-                </div>
-
-                <div class="progress">
-                    <div id="prog-bar-danger" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100">
-                    </div>
-                </div>
-                <!-- End progress bars -->
-
+        <!-- Invisible progress bars (precoloured) -->
+        <div class="progress">
+            <div id="prog-bar-success" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100">
             </div>
         </div>
+
+        <div class="progress">
+            <div id="prog-bar-warning" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                aria-valuemax="100">
+            </div>
+        </div>
+
+        <div class="progress">
+            <div id="prog-bar-danger" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100">
+            </div>
+        </div>
+        <!-- End progress bars -->
+
     </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
